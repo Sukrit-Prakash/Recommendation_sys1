@@ -2,17 +2,7 @@
 movie_recommender.py
 
 Single-file Streamlit app that builds a hybrid movie recommender using MovieLens ml-latest-small.
-Run:
-    pip install -r requirements.txt
-    streamlit run movie_recommender.py
 
-requirements.txt:
-    streamlit
-    pandas
-    numpy
-    scikit-learn
-    scipy
-    joblib
 """
 
 import os
@@ -341,7 +331,7 @@ def build_title_index(movies_sub):
 # ---------- MAIN: Streamlit UI ----------
 def main():
     st.set_page_config(page_title="Hybrid Movie Recommender", layout="wide")
-    st.title("🎬 Hybrid Movie Recommender (Streamlit)")
+    st.title("🎬 Hybrid Movie Recommender ")
 
     with st.spinner("Loading dataset..."):
         ratings, movies = load_ratings_movies()
